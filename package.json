@@ -1,0 +1,24 @@
+{
+  "name": "image-abstraction-layer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "dotenv": "^5.0.1",
+    "express": "^4.16.2",
+    "morgan": "^1.9.0"
+  },
+  "scripts": {
+    "start": "node dist/server.js",
+    "prestart": "babel src -d dist",
+    "dev": "nodemon --exec babel-node src/server.js"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.1"
+  },
+  "engines": {
+    "node": "8.10.0"
+  }
+}
